@@ -17,30 +17,159 @@
   </head>
   <body id="body">
     <div class="main-container">
-      <div class="left-column">
-        <img src="images/my-image.jpg " class="my-image" />
-        <h1 class="title">I'm Rose Ann</h1>
-        <h3 class="subtitle">Software Engineer based in Bataan, Philippines</h3>
-      </div>
-      <div class="right-column">
-        <h2 class="right-title">Welcome to My Digital Playground</h2>
+      <div class="columns">
+        <!--  This is the left column -->
+        <div class="left-column">
+          <img src="images/my-image.jpg " class="my-image" />
+          <h1 class="title">I'm Rose Ann</h1>
+          <h3 class="subtitle">Software Engineer based in the Philippines</h3>
 
-        <p class="right-paragraph">
-          I'm a software engineer based in Bataan, Philippines. I have a passion
-          for web development and love to create mobile applications that are
-          user-friendly and easy to use. I'm always looking for new challenges
-          and opportunities to grow my skills and knowledge in the tech
-          industry. Feel free to explore my digital playground and get in touch
-          with me if you have any questions or would like to collaborate on a
-          project.
-        </p>
-        <br />
-        <div>
-          <button class="talk-btn">Talk with me</button>
-          <button class="work-btn">See my work</button>
+          <!--Top Skills -->
+          <img src="images/skills.svg" alt="SVG Image" class="skills-img" />
         </div>
-        <hr class="solid" style="border-top: 2px solid #dbdbdb;margin-top:60px;">
+
+        <!--  This is the right column -->
+        <div class="right-column">
+          <h2 class="right-title">Welcome to My Digital Playground</h2>
+
+          <p class="right-paragraph">
+            I'm a software engineer based in the Philippines. I have a passion
+            for web development, UI designs and love to create mobile
+            applications that are user-friendly and easy to use. I'm always
+            looking for new challenges and opportunities to grow my skills and
+            knowledge in the tech industry. Feel free to explore my digital
+            playground and get in touch with me if you have any questions or
+            would like to collaborate on a project.
+          </p>
+          <br />
+          <div>
+            <button class="talk-btn">Talk with me</button>
+            <button
+              class="work-btn"
+              onclick="scrollToElement('selected-works')"
+            >
+              See my work
+            </button>
+          </div>
+          <hr
+            class="solid"
+            style="border-top: 2px solid #dbdbdb; margin-top: 80px"
+          />
+
+          <h3 class="what-i-do">What I Do</h3>
+          <div class="skills">
+            <div class="skill skill-1">
+              <h4 class="skill-title">Web Development</h4>
+              <p class="skill-paragraph">
+                I specialize in creating backend and frontend web applications
+                using <span class="laravel-color">Laravel</span> framework.
+              </p>
+            </div>
+            <div class="skill skill-2">
+              <h4 class="skill-title">Mobile Development</h4>
+              <p class="skill-paragraph">
+                I create mobile applications that are easy to use and provide a
+                great user experience using
+                <span class="flutter-color">Flutter</span> and
+                <span class="dart-color">Dart</span>.
+              </p>
+            </div>
+            <div class="skill skill-3">
+              <h4 class="skill-title">UI/UX Design</h4>
+              <p class="skill-paragraph">
+                I design user interfaces that are visually appealing and easy to
+                navigate using <span class="figma-color">Figma</span>.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+      <div>
+        <hr
+          class="solid"
+          style="border-top: 2px solid #dbdbdb; margin-top: 80px"
+        />
+        <h3 class="selected-works" id="selected-works">Selected Works</h3>
+        <div class="first-row">
+          <div class="ek">
+            <h4 style="font-family: 'Barlow', sans-serif; font-weight: 600">
+              Enchanted Kingdom Mobile App
+            </h4>
+            <img src="images/works/ek.svg" alt="" style="width: 80%" />
+          </div>
+          <div class="reserba">
+            <h4 style="font-family: 'Barlow', sans-serif; font-weight: 600">
+              Reserba Mobile App
+            </h4>
+            <img src="images/works/reserba.svg" alt="" style="width: 100%" />
+          </div>
+        </div>
+        <div class="second-row">
+          <div class="share-a-stay">
+            <h4 style="font-family: 'Barlow', sans-serif; font-weight: 600">
+              Share A Stay Mobile App
+            </h4>
+            <img
+              src="images/works/share_a_stay.svg"
+              alt=""
+              style="width: 50%"
+            />
+          </div>
+        </div>
+        <hr
+          class="solid"
+          style="border-top: 2px solid #dbdbdb; margin-top: 80px"
+        />
+        <section class="talk-section" id="talk">
+          <h3 class="selected-works" id="selected-works">Talk To Me</h3>
+          <p class="talk-description" style="font-family: 'Barlow', sans-serif">
+            Feel free to get in touch with me. Whether you have questions,
+            suggestions, or just want to say hello, I'd love to hear from you!
+          </p>
+          <div class="talk-buttons">
+            <button
+              class="talk-btn"
+              onclick="window.location.href='mailto:roseannescropolo@gmail.com'"
+            >
+              Email
+            </button>
+            <button
+              class="talk-btn"
+              onclick="window.open('https://linkedin.com/in/rose-ann-escropolo', '_blank')"
+            >
+              LinkedIn
+            </button>
+
+            <button
+              class="talk-btn"
+              onclick="window.open('https://www.onlinejobs.ph/jobseekers/info/977660', '_blank')"
+            >
+              Online Jobs Ph
+            </button>
+          </div>
+        </section>
+      </div>
+      <footer
+        style="
+          display: flex;
+          justify-content: center;
+          color: #1d1d1d;
+          margin-top: 100px;
+        "
+      >
+        <div class="footer-container">
+          <p class="footer-paragraph">
+            © 2024 Rose Ann Escropolo. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
+
+    <script>
+      function scrollToElement(id) {
+        var element = document.getElementById(id);
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
   </body>
 </html>
