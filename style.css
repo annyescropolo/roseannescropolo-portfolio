@@ -1,0 +1,77 @@
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  /* border: black 1px solid; */
+  display: flex;
+  max-width: 1200px;
+  width: 80%;
+}
+.left-column,
+.right-column {
+  width: 100%;
+  padding-top: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.right-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+.right-paragraph {
+  font-family: "Barlow", sans-serif;
+}
+
+.talk-btn {
+  background-color: #1d1d1d;
+  color: #fff;
+  border: 1.5px solid #1d1d1d;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.talk-btn:hover {
+  background-color: #000;
+}
+
+.work-btn {
+  color: #fff;
+  border: 1.5px solid #1d1d1d;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #1d1d1d;
+}
+
+.work-btn:hover {
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.my-image {
+  border-radius: 30px;
+  height: 200px;
+  width: 200px;
+}
+.title {
+  color: #1d1d1d;
+  font-family: "Montserrat", sans-serif;
+}
+.subtitle {
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+}
