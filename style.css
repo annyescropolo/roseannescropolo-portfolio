@@ -32,6 +32,7 @@ body {
 }
 
 .talk-btn {
+  display: inline-block;
   background-color: #1d1d1d;
   color: #fff;
   border: 1.5px solid #1d1d1d;
@@ -40,6 +41,8 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+  font-family: 'Barlow', sans-serif;
 }
 .talk-btn:hover {
   background-color: #000;
@@ -50,7 +53,7 @@ body {
   border: 1.5px solid #1d1d1d;
   border-radius: 20px;
   padding: 10px 20px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
